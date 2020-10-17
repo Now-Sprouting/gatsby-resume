@@ -613,6 +613,20 @@ export const Global = createGlobalStyle`
       -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+      .ant-modal-content {
+        height: 35rem;
+        border-radius: 1rem;
+        .ant-modal-header {
+          border-radius: 1rem;
+          .ant-modal-title {
+            font-size: 1.2rem;
+          }
+        }
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
     }
 
     a {

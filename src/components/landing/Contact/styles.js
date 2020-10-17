@@ -4,11 +4,11 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   @media (max-width: 960px) {
     flex-direction: column;
   }
 `;
+
 
 export const Details = styled.div`
   flex: 1;
