@@ -51,7 +51,7 @@ export const Details = styled.div`
     }
 
     @media (max-width: 680px) {
-      font-size: 26pt;
+      font-size: 20pt;
     }
   }
 `;

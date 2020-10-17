@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding: 2rem 0;
+  padding: 0rem 0;
 `;
 
 export const Grid = styled.div`
@@ -20,11 +20,25 @@ export const Grid = styled.div`
   }
 `;
 
+export const Title = styled.div`
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+  text-align: center;
+  /* color: black; */
+`
+
 export const Item = styled.div`
+  display: block;
   width: 100%;
   height: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  margin-bottom: 1rem;
 
   h4 {
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
@@ -32,6 +46,7 @@ export const Item = styled.div`
 
   p {
     color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    margin-bottom: 0;
   }
 `;
 
@@ -39,27 +54,27 @@ export const Content = styled.div`
   padding: 1rem 0;
 `;
 
-export const Stats = styled.div`
-  display: flex;
-  align-items: center;
+// export const Stats = styled.div`
+//   display: flex;
+//   align-items: center;
 
-  div {
-    display: flex;
-    &:first-child {
-      margin-right: 0.5rem;
-    }
+//   div {
+//     display: flex;
+//     &:first-child {
+//       margin-right: 0.5rem;
+//     }
 
-    img {
-      margin: 0;
-    }
+//     img {
+//       margin: 0;
+//     }
 
-    svg path {
-      fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-    }
+//     svg path {
+//       fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+//     }
 
-    span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
-      margin-left: 0.5rem;
-    }
-  }
-`;
+//     span {
+//       color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+//       margin-left: 0.5rem;
+//     }
+//   }
+// `;

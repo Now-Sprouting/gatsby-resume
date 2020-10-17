@@ -14,14 +14,13 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Hi There!</h1>
-          <h4>I’m Ding and I’m a JAMStack engineer!</h4>
+          <h4>1这里是丁同学的作品集</h4>
           <Button as={AnchorLink} href="#contact">
-            Hire me
+            联系方式
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Ding and I’m a JAMStack engineer!" />
+          <img src={dev} alt="I’m Ding" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

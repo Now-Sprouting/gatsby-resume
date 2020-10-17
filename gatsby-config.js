@@ -5,11 +5,6 @@ require('dotenv').config({
 });
 
 module.exports = {
-  siteMetadata: {
-    title: config.defaultTitle,
-    description: config.defaultDescription,
-    author: config.author,
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
@@ -20,13 +15,6 @@ module.exports = {
       options: {
         color: config.themeColor,
         showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
       },
     },
     {
