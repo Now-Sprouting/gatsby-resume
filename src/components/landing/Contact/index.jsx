@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import { Container } from 'components/common';
-import { Wrapper, Details } from './styles';
+import { Wrapper, Details, Icons } from './styles';
 import { Modal, Button } from 'antd';
 import img from 'assets/image/微信图片_20201017141401.jpg'
-import ContactForm from './ContactForm';
+import wechact from 'assets/image/微信-方 (1).png'
+import github from 'assets/image/Github.png'
 
 
 
@@ -12,24 +13,27 @@ export const Contact = () => {
   const showModal = () => {
     setstate(true)
   }
-  const handleOk = () => {
-    setstate(false)
-  }
   const handleCancel = () => {
     setstate(false)
   }
   return (
   <Wrapper as={Container} id="contact">
+    <h2>Contact</h2>
     <Details>
-      <Button type="primary" onClick={e => {showModal()}}>
+      {/* <Button type="primary" onClick={e => {showModal()}}>
           Open Modal
-      </Button>
+      </Button> */}
+      <Icons>
+        <img src={wechact} alt="" onClick={e => {showModal()}}/>
+        <a href="https://github.com/Now-Sprouting" target='_blank'>
+          <img src={github} alt=""/>
+        </a>
+      </Icons>
       <Modal
         footer={null}
         centered
-        title="加个微信吧"
+        title="💖加个微信吧!"
         visible={state}
-        onOk={e => {handleOk()}}
         onCancel={e => {handleCancel()}}
       >
         <img src={img} alt=""/>

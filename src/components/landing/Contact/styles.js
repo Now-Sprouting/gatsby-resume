@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
+  margin-top: 2rem;
 `;
 
 
@@ -34,6 +35,25 @@ export const Details = styled.div`
     color: #707070;
   }
 `;
+
+export const Icons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.11);
+  overflow: hidden;
+  img {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin : 0;
+  }
+`
+
 
 // export const Thumbnail = styled.div`
 //   flex: 1;

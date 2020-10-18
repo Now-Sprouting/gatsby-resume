@@ -14,7 +14,7 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h4>1这里是丁同学的作品集</h4>
+          <h4>这里是丁同学的作品集</h4>
           <Button as={AnchorLink} href="#contact">
             联系方式
           </Button>

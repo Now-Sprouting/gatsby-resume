@@ -614,7 +614,7 @@ export const Global = createGlobalStyle`
       -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       font-feature-settings: 'kern', 'liga', 'clig', 'calt';
       .ant-modal-content {
-        height: 35rem;
+        height: 30rem;
         border-radius: 1rem;
         .ant-modal-header {
           border-radius: 1rem;
@@ -623,8 +623,11 @@ export const Global = createGlobalStyle`
           }
         }
         img {
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
           display: block;
-          width: 100%;
+          width: 15rem;
         }
       }
     }
