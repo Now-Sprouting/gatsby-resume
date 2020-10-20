@@ -5,6 +5,8 @@ export const Global = createGlobalStyle`
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    position: relative;
+    overflow-y: ${props => props.loading ? 'hidden' : 'visible'};
 
     article,
     aside,
@@ -600,10 +602,12 @@ export const Global = createGlobalStyle`
       }
     }
     body {
+      position: relative;
+      overflow-y: ${props => props.loading ? 'hidden' : 'visible'};
       margin: 0;
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
-      color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : '#fff')};
+      color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : 'hsla(0, 0%, 0%, 1.0)')};
       background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#D4CDE3')};
       transition: .3s all;
       font-weight: normal;
@@ -620,6 +624,7 @@ export const Global = createGlobalStyle`
           border-radius: 1rem;
           .ant-modal-title {
             font-size: 1.2rem;
+            font-weight: 600;
           }
         }
         img {
