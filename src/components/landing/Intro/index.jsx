@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container, Button } from 'components/common';
-import dev from 'assets/image/person.png';
+// import dev from 'assets/image/person.png';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -20,7 +20,7 @@ export const Intro = () => {
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Ding" />
+          <img src='http://sprouting.ink/image/person.png' alt="I’m Ding" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

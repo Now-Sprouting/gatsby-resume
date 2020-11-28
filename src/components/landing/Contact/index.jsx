@@ -31,7 +31,7 @@ export const Contact = () => {
         <a href="https://github.com/Now-Sprouting" target='_blank'>
           <img src={github} alt=""/>
         </a>
-        <img src={img0} alt="" className='hiddenImg'/>
+        <img src='http://sprouting.ink/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201017141401.jpg' alt="" className='hiddenImg'/>
       </Icons>
       <Texts theme={theme}>
         <h3>📞: 15542456716</h3>
@@ -44,7 +44,7 @@ export const Contact = () => {
         visible={state}
         onCancel={e => {handleCancel()}}
       >
-        <img src={img} alt=""/>
+        <img src='http://sprouting.ink/image/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201017141401.jpg' alt=""/>
       </Modal>
     </Details>
   </Wrapper>

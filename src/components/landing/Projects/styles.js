@@ -24,8 +24,8 @@ export const Title = styled.div`
   width: 100%;
   font-size: 1.2rem;
   font-weight: bold;
-  padding: 0.5rem 0;
-  margin-bottom: 1rem;
+  padding: 0.3rem 0;
+  /* margin-bottom: 1rem; */
   /* border-top: 1px solid black;
   border-bottom: 1px solid black; */
   text-align: center;
@@ -51,6 +51,10 @@ export const Item = styled.div`
 `;
 
 export const Content = styled.div`
+  .description-title {
+    font-weight: 600;
+    color: hsla(0,0%,0%,0.8);
+  }
   padding: 1rem 0;
 `;
 
