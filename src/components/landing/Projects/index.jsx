@@ -44,7 +44,7 @@ export const Projects = () => {
       id: 1,
       name: '🎉网易云音乐App',
       click: '点击预览👇',
-      url: 'http://81.70.17.129:3003/#/recommend',
+      url: 'http://mobialmusic.rooting.ink',
       // description: '基于 React 开发的移动端网易云音乐项目,样式采用 CSS in JS方式, 加上React过渡动画,基于 React-Router实现单页面应用, 使用 axios 作为前后端交互的方式, 还引入了 Redux 结合 immutable 对数据状态进行管理, 编写的所有组件均为函数式组件并引入了 React-Hooks',
       description:{
         title : '基于 React 开发的移动端网易云音乐项目',
@@ -60,7 +60,7 @@ export const Projects = () => {
       id: 2,
       name: '🎉VuePress个人博客',
       click: '点击预览👇',
-      url: 'http://now_sprouting.gitee.io/blog/',
+      url: 'http://blog.rooting.ink/',
       // description: '一个基于..的项目萨达萨达萨达是一个基于..的项目萨达萨达萨达是一个基于..的项目萨达萨达萨达是一个基于..的项目萨达萨达萨达是一个基于..的项目萨达萨达萨达是',
       description: {
         title : '基于 Vuepress 开发的个人博客',
